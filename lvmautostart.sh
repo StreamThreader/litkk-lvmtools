@@ -1,11 +1,15 @@
 #!/bin/bash
 
+##### Variables #################################################################################
+#################################################################################################
 LOGFILE="/var/log/lvm-autostart.log"	# Log file
 CURDATA=`date +%Y-%m-%d`		# Current data
 LVMFILE="/sc/fileserverlvm.img"		# File with LVM partitions
 LOOPDEVS="/dev/loop11"			# Loop device for mount LVM file with LVM partitions
 VGNAME=documents			# Name of Volume Group
 LVMDIRS="/sc/FileSRV"			# Directory where is resides files on LVM
+#################################################################################################
+
 
 echo -e >> $LOGFILE
 
